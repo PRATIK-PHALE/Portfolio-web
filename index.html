@@ -1,142 +1,233 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-        <title>Responsive portfolio website Chris - Bedimcode</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    Chirs
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="fa-solid fa-house"></i> Home
-                            </a>
-                        </li>
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="">
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="fa-solid fa-trophy"></i> Skills
-                            </a>
-                        </li>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
-                                <i class="fa-sharp fa-solid fa-book"></i> Qualification
-                            </a>
-                        </li>
+    <title>Responsive portfolio website Chris - Bedimcode</title>
+</head>
 
-                        <li class="nav__item">
-                            <a href="#service" class="nav__link">
-                                <i class="fa-solid fa-briefcase"></i> Services
-                            </a>
-                        </li>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Chirs
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="fa-solid fa-image"></i> Projects
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fa-solid fa-trophy"></i> Skills
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="fa-brands fa-rocketchat"></i> Contect
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="fa-sharp fa-solid fa-book"></i> Qualification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#service" class="nav__link">
+                            <i class="fa-solid fa-briefcase"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fa-solid fa-image"></i> Projects
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fa-brands fa-rocketchat"></i> Contect
+                        </a>
+                    </li>
+                </ul>
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav__buttons">
+                <!-- Theme changes button -->
+                <!-- <i class="fa fa-duotone fa-moon change-theme" id="theme-button"></i> -->
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I'm Pratik <br>
+                        Frontend Developer <br>
+                        Based In Ghansoli <br>
+                    </h1>
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="assets/img/perfil.png" alt="home perfil">
+                        </div>
+
+                        <img src="assets/img/shape-wawes.svg" alt="home__shape__wawes" class="home__shape__wawes">
+                        <img src="assets/img/shape-circle.svg" alt="home__shape__circle" class="home__shape__circle">
+                    </div>
+                    <ul class="home__social">
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </ul>
-                    <!-- close button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!-- Home Info 1 -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            BIOGRAPHY
+                        </h3>
+                        <p class="home__info-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Officia, harum.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+                        <p class="home__info-description">
+                            Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Dolorum, eos.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            SERVICES
+                        </h3>
+                        <p class="home__info-description">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ducimus, cumque!
+                        </p>
                     </div>
                 </div>
-                <div class="nav__buttons">
-                    <!-- Theme changes button -->
-                    <!-- <i class="fa fa-duotone fa-moon change-theme" id="theme-button"></i> -->
-                    <!-- toggle button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="fa-solid fa-bars"></i>
+                <!-- Home Info 2 -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            Years Of experience
+                        </h3>
+                        <p class="home__info-number">
+                            0.3
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            Complet Project
+                        </h3>
+                        <p class="home__info-number">
+                            25+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            Companys Worked
+                        </h3>
+                        <p class="home__info-number">
+                            1
+                        </p>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </section>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+<h2 class="section__title">Skills</h2>
+        </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                
-            </section>
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                
-            </section>
+        </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
 
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                
-            </section>
+        </section>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
 
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                
-            </section>
-        </main>
+        </section>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            
-        </footer>
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+    </footer>
 
 
-        <!--========== SCROLL UP ==========-->
-        
+    <!--========== SCROLL UP ==========-->
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
-        
-        <!--=============== EMAIL JS ===============-->
-        
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== EMAIL JS ===============-->
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
