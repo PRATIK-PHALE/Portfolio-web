@@ -331,7 +331,15 @@ color: var(--title-color);
 }
 
 /*=============== SKILLS ===============*/
-
+.skills__container{
+  row-gap: 3rem;
+}
+.skills__title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+}
 
 /* Animation skills */
 
