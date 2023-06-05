@@ -50,7 +50,13 @@ spaceBetween: 24,
   });
 
 /*=============== SWIPER TESTIMONIAL ===============*/
-
+let swipertestimonial = new Swiper(".testimonial__container", {
+  grabCursor:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 /*=============== EMAIL JS ===============*/
 

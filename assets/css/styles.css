@@ -595,8 +595,33 @@ color: var(--text-color-light);
   opacity: .1;
 }
 /* Swiper class */
-
-
+.testimonial__container .swiper-side{
+  margin-bottom: 4rem;
+}
+.testimonial__container .swiper-button-next::after,
+.testimonial__container .swiper-button-prev::after{
+  content:'';
+}
+.testimonial__container .swiper-button-next,
+.testimonial__container .swiper-button-prev{
+  width: initial;
+  height: initial;
+  margin: initial;
+  top: initial;
+  bottom: .5rem;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+.testimonial__container .swiper-button-next{
+  right:calc(50% - 4rem);
+  }
+.testimonial__container .swiper-button-prev{
+    left:calc(50% - 4rem);
+  }
+  .testimonial__container .swiper-button-disabled{
+    opacity: initial;
+    color: var(--text-color-light);
+  }
 /*=============== CONTACT ===============*/
 
 
