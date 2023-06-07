@@ -730,6 +730,18 @@ resize: none;
   font-style: 1.5rem;
   font-weight: initial;
 }
+.contact__message{
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.5rem;
+}
+.color-bule{
+  color: rgb(42, 42, 197);
+}
+.color-red{
+  color: rgb(245, 29, 29);
+}
 /* Status color */
 
 
