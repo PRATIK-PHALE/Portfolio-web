@@ -59,42 +59,83 @@ let swipertestimonial = new Swiper(".testimonial__container", {
 });
 
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById('contact-form'),
-  contactName = document.getElementById('contact-name'),
-  contactEmail = document.getElementById('contact-email'),
-  contactProject = document.getElementById('contact-project'),
-  contactMessage = document.getElementById('contact-message')
+// const contactForm = document.getElementById('contact-form'),
+//   contactName = document.getElementById('contact-name'),
+//   contactEmail = document.getElementById('contact-email'),
+//   contactProject = document.getElementById('contact-project'),
+//   contactMessage = document.getElementById('contact-message')
 
-const sendEmail = (e) => {
-  e.preventDefault()
-  debugger;
-  // cheack if the field has values
-  if (contactName.value === ' ' || contactEmail.value === ' ' || contactMessage.value === ' ' || contactProject.value === ' ') {
-    // add and remove of color
-    contactMessage.classList.remove('color-blue')
-    contactMessage.classList.add('color-red')
+// function sendmail(){
+//   var params={
+//     name:document.querySelector('#contact-name').value,
+//     email:document.querySelector('#contact-email').value,
+//     project:document.querySelector('#contact-project').value
+//   }
+//   const serviceId="service_uuay66j";
+//   const templateId="template_j1w3ats";
+  
+//   emailjs.send(serviceId,templateId,params)
+//   .then(
+//     res=>{
+//      document.querySelector('#contact-name').value="";
+//     document.querySelector('#contact-email').value="";
+//     document.querySelector('#contact-project').value="";
+//     console.log(res);
+//     alert("send sussecfuly")
+//     }).catch((err)=> console.log(err));
+// }
 
-    contactMessage.textContent = "Fill all inputs"
-  } else {
-    // serviceId-Templateid-#form-publicKey
-    emailjs.sendEmail('service_uuay66j', 'template_j1w3ats', '#contact-form', '9pCZiyGWmcdARb0uI')
-      .then(() => {
-        // add and text
-        contactMessage.classList.add('color-blue')
-        contactMessage.textContent = "Message Send"
-        setTimeout(function () {
-          contactMessage.textContent = " ";
-        }, 5000);
-      },(error)=>{
-  alert("opps somthings thais fale ",error)
-      });
-// clear input field
-contactName.value=''
-  contactEmail.value=''
-  contactProject.value=''
-  }
-}
-contactForm.addEventListener('submit', sendEmail)
+
+
+// ----smtp.js---------
+// function sendEmail(){
+//   Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "pratikphale6872@gmail.com",
+//         Password : "rwarjiganzcugqrt",
+//         To : 'pratikphale6872@gmail.com',
+//         ReplyTo:'pratikphale6872@gmail.com',
+//         From :`${contactEmail.value}`,
+//         Subject : "New Contact Form Enquery",
+//         Body : "Name :"+ contactName.value +"<br>"+
+//         `Email:${contactEmail.value}`+`<br>` +
+//         `Project:${contactProject.value}`+`<br>`
+//     }).then(
+//       message => alert(message)
+// );
+// }
+
+// -------email js------------
+// const sendEmail = (e) => {
+//   e.preventDefault()
+//   debugger;
+//   // cheack if the field has values
+//   if (contactName.value === ' ' || contactEmail.value === ' ' || contactMessage.value === ' ' || contactProject.value === ' ') {
+//     // add and remove of color
+//     contactMessage.classList.remove('color-blue')
+//     contactMessage.classList.add('color-red')
+
+//     contactMessage.textContent = "Fill all inputs"
+//   } else {
+//     // serviceId-Templateid-#form-publicKey
+//     emailjs.sendEmail('service_uuay66j', 'template_j1w3ats', '#contact-form', '9pCZiyGWmcdARb0uI')
+//       .then(() => {
+//         // add and text
+//         contactMessage.classList.add('color-blue')
+//         contactMessage.textContent = "Message Send"
+//         setTimeout(function () {
+//           contactMessage.textContent = " ";
+//         }, 5000);
+//       },(error)=>{
+//   alert("opps somthings thais fale ",error)
+//       });
+// // clear input field
+// contactName.value=''
+//   contactEmail.value=''
+//   contactProject.value=''
+//   }
+// }
+// contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 

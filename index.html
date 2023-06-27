@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,7 +95,7 @@
                     </h1>
                     <div class="home__blob grid">
                         <div class="home__perfil">
-                            <img src="assets/img/perfil.png" alt="home perfil">
+                            <img src="assets/img/aiimg.png" alt="home perfil">
                         </div>
 
                         <img src="assets/img/shape-wawes.svg" alt="home__shape__wawes" class="home__shape__wawes">
@@ -513,7 +514,8 @@
                     <h3 class="contact__title">
                         <i class="ri-send-plane-line"></i> Write me your project
                     </h3>
-                    <form action="" class="contact__form" id="contact-form">
+                    <form action="https://formspree.io/f/mzblpgvd" method="post" class="contact__form" id="contact-form">
+                        <!-- smtp.js in form tag (onsubmit=" sendEmail(); reset(); return false") -->
                         <div class="contact__form-div">
                             <label for="contact-name" class="contact__form-tag">Names</label>
                             <input type="text" name="user__name" required placeholder="Write your Name"
@@ -526,7 +528,7 @@
                         </div>
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Projects</label>
-                            <textarea name="user_project" placeholder="Write your project" class="contact__form-input"
+                            <textarea name="user__project" placeholder="Write your project" class="contact__form-input"
                                 id="contact-project"></textarea>
                         </div>
                         <p class="contact__message" id="contact__message"></p>
@@ -549,7 +551,7 @@
                     <a href="#home" class="footer__link">Home</a>
                 </li>
                 <li>
-                    <a href="#skills" class="footer__link">Skills</a> 
+                    <a href="#skills" class="footer__link">Skills</a>
                 </li>
                 <li>
                     <a href="#projects" class="footer__link">Project</a>
@@ -574,9 +576,9 @@
 
 
     <!--========== SCROLL UP ==========-->
-<a href="#" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-line"></i>
-</a>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
@@ -584,8 +586,11 @@
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== EMAIL JS ===============-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--=============== EMAIL JS ===============-->    
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== smtp JS ===============-->
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
