@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+        form{
+            background-color: burlywood;
+            padding: 80px;
+            width: 50%;
+            margin: 100px auto;
+            text-align: center;
+            --webkit-box-shadow:0px 10px 6px -6px #777;
+            --moz-box-sizing: 0 10px 6px -6px #777;
+            box-shadow: 0px 10px 6px -6px #777;
+        }
+        #tempCalc label{
+            font-size:30px;
+        }
+        #temp{
+            border: none;
+            padding: 10px;
+            height: 40px;
+            width: 100px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #temp_diff{
+            height: 40px;
+            border: none;
+            padding: 10px;
+            margin: 20px;
+            font-size:15px;
+            /* vertical-align: top; */
+        }
+        form[type="submit"]{
+            height: 35px;
+            margin: 20px;
+            width: 100px;
+            font-size: 15px;
+            border: none;
+            border-color: #000;
+            color:#fff;
+            cursor: pointer;
+        }
+        #resultContainer{
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    
+<form action="" id="tempCalc" onsubmit="calculatetemp(); return false">
+<label for="temp">Please the temperature you like to convert </label>
+<br><input type="number" name="temp" id="temp">
+
+<select name="temp_diff" id="temp_diff">
+    <option value="cel">Celsius</option>
+    <option value="fah">Fahrenheit</option>
+</select><br>
+<input type="submit" name="temp"><br>
+<span id="resultContainer"></span>
+</form>
+
+
+
+<script>
+
+const calculatetemp=()=>{
+  const numbertemp=document.querySelector("#temp").value;
+const tempselected=document.querySelector("#temp_diff");
+const valuetemp =tempselected.options[tempselected.selectedIndex].value;
+const celtofah=(cel)=>{
+    let fahrenheitv=Math.round((cel*9/5)+32)
+    return fahrenheitv
+}
+const fahtocel=(fah)=>{
+    let celsius=Math.round((fah-32)*5/9);
+    return celsius
+}
+
+let result;
+
+if(valuetemp=="cel"){
+    result=celtofah(numbertemp);
+document.querySelector("#resultContainer").innerHTML=`${result}Fahreheit`;
+}else{
+    result=fahtocel(numbertemp);
+document.querySelector("#resultContainer").innerHTML=`${result}Celsius`;
+}
+}
+
+</script>
+</body>
+</html>

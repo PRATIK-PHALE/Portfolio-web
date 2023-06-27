@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .outerdiv{
+            width:100vw;
+            height: 100vh;
+            background:#234567;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+         }
+       .innerdiv{
+            width: 80vh;
+            height: 70vh;
+            background: #fff;
+            display: grid;
+            justify-content: center;
+            place-items: center;
+        }
+        .main-heading{
+            padding: 30px;
+            color:#000;
+            font-size: 2rem;
+        }
+        span{
+            font-size: 4rem;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <h4 class="main-heading">Animated Thermometer <span id="temp" class="fa"></span></h4>
+        </div>
+    </div>
+
+
+
+    <script>
+        const tempload=()=>{
+    let tem=document.querySelector('#temp');
+   
+    setTimeout(()=>{
+        tem.innerHTML="&#xf2cb;"
+        tem.style.color="#00FF00"
+
+    },1000);
+    setTimeout(()=>{
+        tem.innerHTML="&#xf2ca;"
+        tem.style.color="#FFFF00"
+        
+    },2000);
+    setTimeout(()=>{
+        tem.innerHTML="&#xf2c9;"
+    },3000);
+    setTimeout(()=>{
+        tem.innerHTML="&#xf2c7;"
+        tem.style.color="#FF0000"
+    },4000);
+        }
+        tempload()
+        setInterval(tempload,5000)
+    </script>
+</body>
+</html>

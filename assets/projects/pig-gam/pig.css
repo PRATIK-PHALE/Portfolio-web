@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    /* font-size: 62%; */
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+main{
+    position: relative;
+    width: 100rem;
+    height:60rem;
+    background-color: grey;
+    backdrop-filter: blur(200px);
+    filter: blur();
+    display: flex;
+    overflow: hidden;
+}
+.player{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+/* elements */
+.name{
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.score{
+    font-size: 8rem;
+    font-weight: 300;
+    color: palevioletred;
+    /* margin-bottom: auto; */
+}
+.player--active{
+  
+    background-color: aquamarine;
+}
+.player--active .name{
+    font-weight: 700;
+}
+.current{
+    background-color: crimson;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: beige;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all .5s;
+}
+.current-label{
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-size: small;
+}
+.current-sore{
+    font-size: 3.5rem;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    background-color: white;
+    border: none;
+    color: #000;
+    transform: translate(-50%);
+padding: 1rem;
+border-radius: 20px;
+}
+.btn::first-letter{
+    font-size: 2.4rem;
+    display:inline-block;
+    margin-right: 0.7rem;
+
+}
+.btn--new{
+    top: 4rem;
+}
+.btn--roll{
+    top: 28rem;
+}
+.btn--hold{
+    top: 36rem;
+}
+.btn:active{
+    transform: translate(-50%,3px);
+    box-shadow: 0 1rem 2rem black;
+}
+.btn:focus{
+    outline: none;
+}
+.dice{
+    position: absolute;
+    left: 50%;
+    top: 16rem;
+    height: 6rem;
+    transform: translate(-50%);
+}
+.player--winer{
+    background-color: yellow
+}
+.player--winer .name{
+    font-weight: 700;
+    color: crimson;
+}
+.hidden{
+    display: none;
+}   
+@media screen and (max-width:767px) {
+    .name{
+        font-size: 2rem;
+    }
+    .score {
+        font-size: 4rem;
+    }
+    .btn::first-letter {
+        font-size: 1.4rem;
+    }
+}
