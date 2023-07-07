@@ -701,6 +701,7 @@ color: var(--text-color-light);
 }
 .contact-button {
   padding: 0.6em 2em;
+  margin-right: 1rem;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -713,7 +714,9 @@ color: var(--text-color-light);
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
+.contact-button  a{
+  color: rgb(255, 255, 255);
+}
 .contact-button:before {
   content: "";
   background: linear-gradient(
